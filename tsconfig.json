@@ -22,11 +22,11 @@
         "module": "preserve",
         "target": "esnext",
         "outDir": "./dist",
+        "rootDir": "./src",
         "baseUrl": "./",
         "paths": {}
     },
     "include": [
-        "./src/**/*",
-        "./tests/**/*"
-    ],
+        "./src/**/*"
+    ]
 }

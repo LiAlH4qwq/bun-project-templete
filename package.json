@@ -10,6 +10,7 @@
     "bugs": "https://github.com/lialh4/bun-project-templete/issues",
     "main": "src/index.ts",
     "module": "src/index.ts",
+    "types": "dist/index.d.ts",
     "engines": {
         "bun": ">1.0.0"
     },
@@ -25,6 +26,6 @@
         "typescript": "^5"
     },
     "scripts": {
-        "prepublishOnly": "tsc"
+        "prepublishOnly": "bun x tsc"
     }
 }
