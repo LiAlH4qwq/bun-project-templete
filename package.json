@@ -20,12 +20,14 @@
         "tsconfig.json"
     ],
     "devDependencies": {
-        "@types/bun": "latest"
+        "@types/bun": "latest",
+        "tsc-alias": "^1.8.16"
     },
     "peerDependencies": {
         "typescript": "^5"
     },
     "scripts": {
-        "prepublishOnly": "bun x tsc"
+        "prepublishOnly": "bun run compile",
+        "compile": "bun run tsc && bun run tsc-alias"
     }
 }
